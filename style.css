@@ -1,54 +1,68 @@
-header {
-    height: 70px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--main-color);
-}
-header>img {
-    height: 56px;
+.landing-section > img {
+  height: 100dvh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 64%;
 }
 
-.header-navbar>a{
-    display: none;
-    color: white;
-    font-family: 'Arima';
-    font-weight: 700;
-    text-decoration: none;
-}
+nav {
+  height: 70px;
+  width: 100%;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--main-color);
+  position: fixed;
+}
+nav > a {
+  display: none;
+  color: white;
+  font-family: "Arima";
+  font-weight: 700;
+  text-decoration: none;
+}
+nav > img {
+  height: 56px;
+}
 
 footer {
-    height: 134px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: var(--main-color);
+  height: 134px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
 
-    padding: 30px 24px;
+  padding: 5px 10px;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer-content>a,
+.footer-content > a,
 p {
-    font-family: 'Palanquin';
-    font-weight: 400;
-    text-decoration: none;
-    color: white;
+  font-family: "Palanquin";
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-content > p {
+  font-size: var(--font-author);
 }
 
 .footer-social {
-    display: flex;
-    gap: 16px;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
 }
 
-.footer-content>a {
-    height: 24px;
+.footer-content > a {
+  height: 24px;
 }
