@@ -1,10 +1,36 @@
 :root {
   /* COLOR´s */
   --bg-color: white;
-  --main-color-dark: #4ea487;
-  --main-color-hell: #4ea48733;
+  --main-color: #4ea487;
+  --main-color-transparent: #4ea48733;
   --second-color: #f1c953;
-  --text-color-one: #3d3d3d;
-  --text-color-two: #54370d;
-  /* others */
+  --text-color-one: #54370d;
+  --text-color-two: #3d3d3d;
+  /* TEXT */
+
+  /* h1-text: 40px - 64px */
+  --font-h1: clamp(2.5rem, 2.14vw + 1.64rem, 4rem);
+  /* heighlights,faq,contact: 40px - 52px */
+  --font-h2: clamp(2.5rem, 1.71vw + 2.07rem, 3.25rem);
+  /* picture-head: 20px - 32px */
+  --font-h3: clamp(1.25rem, 1.71vw + 0.82rem, 2rem);
+
+  /* 20px - 40px */
+  --h1-top: clamp(1.25rem, 0.795rem + 2.273vw, 2.5rem);
+  /* 18px - 28px */
+  --h1-bottom-1: clamp(1.125rem, 0.898rem + 1.136vw, 1.75rem);
+  /* 18px - 32px */
+  --h1-bottom-2: clamp(1.125rem, 0.807rem + 1.591vw, 2rem);
+
+  /* 28px - 48px */
+  --font-picture-top: clamp(1.75rem, 1.295rem + 2.273vw, 3rem);
+  /* 20px - 28px  */
+  --font-picture-bottom: clamp(1.25rem, 1.068rem + 0.909vw, 1.75rem);
+
+  /* 18px - 24px */
+  --font-follow: clamp(1.125rem, 0.989rem + 0.682vw, 1.5rem);
+  /* 16px - 18px */
+  --font-author: clamp(1rem, 0.955rem + 0.227vw, 1.125rem);
+  /* 15px */
+  --font-policy: 15px;
 }
