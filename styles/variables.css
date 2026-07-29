@@ -1,3 +1,10 @@
 :root {
+  /* COLOR´s */
   --bg-color: white;
+  --main-color-dark: #4ea487;
+  --main-color-hell: #4ea48733;
+  --second-color: #f1c953;
+  --text-color-one: #3d3d3d;
+  --text-color-two: #54370d;
+  /* others */
 }
