@@ -16,12 +16,18 @@ nav {
   background-color: var(--main-color);
   position: fixed;
 }
-nav > a {
+
+li{
+    list-style: none;
+}
+
+li > a {
   display: none;
   color: white;
   font-family: "Arima";
   font-weight: 700;
   text-decoration: none;
+  
 }
 nav > img {
   height: 56px;
