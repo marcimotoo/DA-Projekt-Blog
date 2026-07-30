@@ -29,6 +29,8 @@
 
   /* 18px - 24px */
   --font-follow: clamp(1.125rem, 0.989rem + 0.682vw, 1.5rem);
+  /* 16px - 24px  */
+  --font-faq: clamp(1rem, 0.826rem + 0.87vw, 1.5rem);
   /* 16px - 18px */
   --font-author: clamp(1rem, 0.955rem + 0.227vw, 1.125rem);
   /* 15px */
