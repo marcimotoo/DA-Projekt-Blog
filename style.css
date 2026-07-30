@@ -1,8 +1,78 @@
-.landing-section > img {
-  height: 100dvh;
-  width: 100%;
-  object-fit: cover;
-  object-position: 64%;
+main {
+  padding: 0px max(calc(50% - 720px), 0px);
+}
+
+.landing-section {
+  background-image: url(./assets/img/landingphoto.png);
+  background-position: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 500px;
+  max-width: 1440px;
+  overflow: hidden;
+}
+.landing-animation {
+  max-height: 500px;
+  /* animation: landinganimation 5s ease forwards; */
+  z-index: 1;
+}
+
+@keyframes landinganimation {
+  0% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+.rotation-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  z-index: 2;
+}
+
+.rotation-container {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  animation: movelogo 2s ease forwards;
+}
+.rotation {
+  filter: drop-shadow(0px 0px 10px #0000005d);
+  animation: rotatelogo 6s linear 3s infinite;
+}
+
+.no-rotation {
+  position: absolute;
+  top: 55px;
+  right: 55px;
+  z-index: 2;
+}
+
+@keyframes movelogo {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes rotatelogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-sections {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 
 nav {
@@ -16,21 +86,23 @@ nav {
   background-color: var(--main-color);
   position: fixed;
 }
+nav > img {
+  height: 56px;
+}
+/* display none ins ul sonst ist das logo nicht mittig  */
+ul {
+  display: none;
+}
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
 li > a {
-  display: none;
   color: white;
   font-family: "Arima";
   font-weight: 700;
   text-decoration: none;
-  
-}
-nav > img {
-  height: 56px;
 }
 
 footer {
@@ -71,4 +143,10 @@ p {
 
 .footer-content > a {
   height: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  nav {
+    position: inherit;
+  }
 }

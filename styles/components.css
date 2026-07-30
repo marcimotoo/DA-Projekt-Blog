@@ -1,0 +1,35 @@
+.galerie-center {
+  display: flex;
+  justify-content: center;
+}
+
+.galerie-container {
+  position: relative;
+  height: 500px;
+  width: 80%;
+
+  overflow: hidden;
+}
+.galerie-pictures {
+  position: absolute;
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+
+.slider-element img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.element-one {
+}
+
+.element-two {
+}
+
+.element-three {
+}
+.element-four {
+}

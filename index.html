@@ -1,19 +1,16 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reiseblog</title>
-  <link rel="stylesheet" href="./styles/reset.css" />
-  <link rel="stylesheet" href="./styles/components.css" />
-  <link rel="stylesheet" href="./styles/variables.css" />
-  <link rel="stylesheet" href="./styles/font.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <section class="landing-section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reiseblog</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
       <nav>
         <img src="./assets/icons/logo.svg" alt="Weltkugel mit Flugzeug" />
@@ -30,46 +27,76 @@
         </ul>
       </nav>
     </header>
-    <img src="./assets/img/landingphoto.png" alt="" />
-  </section>
-  <main>
-    <section></section>
-  </main>
+    <main>
+      <section class="landing-section">
+        <!-- <img class="landing-animation" src="./assets/img/landing-animation-2.svg" alt="" /> -->
+        <div class="rotation-logo">
+          <div class="rotation-container">
+            <img
+              class="rotation"
+              src="./assets/img/TürkischCircle-160x160.svg"
+              alt="Ein grüner Kreis, mit Türkischen symbol in der mitte der sich im kreis dreht."
+            />
+            <img class="no-rotation" src="./assets/img/Flag_orb_Turkey 1.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Highlights -->
+      <section>
+        <section>
+          <div class="main-sections">
+            <img src="./assets/icons/rocket_launch.svg" alt="kleines symbol einer rackete" />
+            <h2>Highlights</h2>
+          </div>
+          <article class="galerie-center">
+            <div class="galerie-container">
+              <div class="galerie-buttons">
+                <input type="radio" name="slider" id="one" checked />
+                <input type="radio" name="slider" id="two" />
+                <input type="radio" name="slider" id="three" />
+                <input type="radio" name="slider" id="four" />
+              </div>
 
-  <section>
-    <div>
-      <img src="" alt="">
-      <h2>Contact form</h2>
-    </div>
+              <div class="galerie-pictures">
+                <div class="slider-element element-one"><img src="./assets/img/header photo.png" alt="" /></div>
+                <div class="slider-element element-two"><img src="./assets/img/header photo-2.png" alt="" /></div>
+                <div class="slider-element element-three"><img src="./assets/img/header photo-3.png" alt="" /></div>
+                <div class="slider-element element-four"><img src="./assets/img/header photo-4.png" alt="" /></div>
+              </div>
+            </div>
+          </article>
+          <!-- bilder box -->
+        </section>
+      </section>
+      <!-- contact form  -->
+      <section>
+        <div class="main-sections">
+          <img src="./assets/icons/person_pin.svg" alt="" />
+          <h2>Contact form</h2>
+        </div>
+        <form>
+          <label for="">What's your name?</label>
+          <input type="text" name="" id="" />
+          <label for="">What's your email?</label>
+          <input type="email" name="" id="" />
+          <label for="">How can I help?</label>
+          <input type="text" name="" id="" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-content">
+        <a href="">Imprint</a>
+        <a href="">Cookie Preferences</a>
+        <p>© Travel Blog 2026</p>
+      </section>
 
-    <form>
-      <label for="">What's your name?</label>
-      <input type="text" name="" id="">
-      <label for="">What's your email?</label>
-      <input type="email" name="" id="">
-      <label for="">How can I help?</label>
-      <input type="text" name="" id="">
-
-
-
-    </form>
-
-  </section>
-
-  <footer>
-    <section class="footer-content">
-      <a href="">Imprint</a>
-      <a href="">Cookie Preferences</a>
-      <p>© Travel Blog 2026</p>
-    </section>
-
-    <section class="footer-social">
-      <a href=""><img src="./assets/icons/Tiktok_icon 1.svg" alt="" /></a>
-      <a href=""><img src="./assets/icons/youtube.svg" alt="" /></a>
-      <a href=""><img src="./assets/icons/facebook.svg" alt="" /></a>
-      <a href=""><img src="./assets/icons/Instagram_logo_2016 1.svg" alt="" /></a>
-    </section>
-  </footer>
-</body>
-
+      <section class="footer-social">
+        <a href=""><img src="./assets/icons/Tiktok_icon 1.svg" alt="" /></a>
+        <a href=""><img src="./assets/icons/youtube.svg" alt="" /></a>
+        <a href=""><img src="./assets/icons/facebook.svg" alt="" /></a>
+        <a href=""><img src="./assets/icons/Instagram_logo_2016 1.svg" alt="" /></a>
+      </section>
+    </footer>
+  </body>
 </html>
