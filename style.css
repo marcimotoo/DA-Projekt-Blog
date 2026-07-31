@@ -11,6 +11,7 @@ main {
   max-width: 1440px;
   overflow: hidden;
 }
+
 .landing-animation {
   max-height: 500px;
   /* animation: landinganimation 5s ease forwards; */
@@ -21,6 +22,7 @@ main {
   0% {
     transform: translateX(2px);
   }
+
   100% {
     transform: translateX(-200px);
   }
@@ -40,6 +42,7 @@ main {
   width: 160px;
   animation: movelogo 2s ease forwards;
 }
+
 .rotation {
   filter: drop-shadow(0px 0px 10px #0000005d);
   animation: rotatelogo 6s linear 3s infinite;
@@ -56,14 +59,17 @@ main {
   from {
     transform: translateY(500px);
   }
+
   to {
     transform: translateY(0px);
   }
 }
+
 @keyframes rotatelogo {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -86,9 +92,11 @@ nav {
   background-color: var(--main-color);
   position: fixed;
 }
-nav > img {
+
+nav>img {
   height: 56px;
 }
+
 /* display none ins ul sonst ist das logo nicht mittig  */
 ul {
   display: none;
@@ -98,13 +106,136 @@ li {
   list-style: none;
 }
 
-li > a {
+li>a {
   color: white;
   font-family: "Arima";
   font-weight: 700;
   text-decoration: none;
 }
 
+/* <---- start section contact -----> */
+.contact {
+  width: 100%;
+  display: grid;
+  font-family: "Palanquin";
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact p,
+label {
+  color: var(--text-color-one);
+}
+
+.contact>P{
+  text-align: center;
+  padding: 24px 0px;
+  line-height: 110%;
+}
+.top{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  justify-content: center;
+
+}
+.form-box-bottom{
+  width: 100%;
+  padding-top: 17px;
+}
+
+/* .top-box{
+  width: 50%;
+} */
+
+.if-02 {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+}
+
+/* .if-02-wrap {
+  position: relative;
+  display: block;
+
+} */
+
+/* .if-02-wrap::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+
+} */
+
+.contact-input {
+  width: 100%;
+  padding: 8px 0 9px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: var(--main-color);
+  font-size: var(--font-follow);
+  border-bottom: 1px solid var(--text-color-one);
+
+
+}
+
+/* <---- checkbox -----> */
+.contact-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--text-color-one);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+
+.contact-checkbox:hover {
+  background: var(--second-color);
+  border-color: var(--text-color-one);
+}
+
+.contact-checkbox:checked {
+  background-color: var(--main-color);
+  border: none;
+}
+.contact-checkbox::after{
+  content: "";
+  width: 9px;
+  height: 4px;
+  border: 2px solid var(--second-color);
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg) translateY(-2px);
+  opacity: 0;
+}
+
+.contact-checkbox:checked::after{
+  opacity: 1;
+}
+/* <---- ENDE -- checkbox -----> */
+
+.inline-link {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  font-weight: bold;
+}
+.button-send {
+  border: 1px solid #737373;
+  color: #737373;
+}
+/* <---- end section contact -----> */
+/* <---- start section footer -----> */
 footer {
   height: 134px;
   width: 100%;
@@ -121,7 +252,7 @@ footer {
   flex-direction: column;
 }
 
-.footer-content > a,
+.footer-content>a,
 p {
   font-family: "Palanquin";
   font-weight: 400;
@@ -129,7 +260,7 @@ p {
   color: white;
 }
 
-.footer-content > p {
+.footer-content>p {
   font-size: var(--font-author);
 }
 
@@ -141,9 +272,11 @@ p {
   gap: 16px;
 }
 
-.footer-content > a {
+.footer-content>a {
   height: 24px;
 }
+
+/* <---- end section footer -----> */
 
 @media screen and (min-width: 1440px) {
   nav {
