@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 .faq-section {
@@ -23,7 +23,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 8px;
     margin-bottom: 48px;
 }
@@ -41,7 +40,7 @@ body {
     font-weight: 700;
     line-height: 1;
 
-    color: #50ad89;
+    color: var(--main-color);
 }
 
 /* A négy FAQ-kártya közös konténere */
@@ -56,8 +55,7 @@ body {
 
 details {
     overflow: hidden;
-
-    background-color: #f1c953;
+    background-color: var(--second-color);
     border-radius: 12px;
 }
 
@@ -76,9 +74,9 @@ summary {
     font-family: Palanquin, Arial, sans-serif;
     font-size: 24px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1;
 
-    color: #54370d;
+    color: var(--text-color-one);
 }
 
 /* A böngésző eredeti nyilának elrejtése */
@@ -90,36 +88,38 @@ summary::-webkit-details-marker {
 /* Saját lefelé mutató nyíl */
 
 summary::after {
-    content: "⌄";
+    content: url("./icons/arrow.svg");
 
+    width: 24px;
+    height: 24px;
     flex-shrink: 0;
     margin-left: 16px;
 
-    font-size: 28px;
-    line-height: 1;
+    display: inline-block;
+    transition: transform 0.3s ease-in;
 }
 
 /* Nyitott állapotban felfelé mutató nyíl */
 
 details[open] summary::after {
-    content: "⌃";
+    transform: rotate(180deg);
 }
 
 /* A lenyíló válasz fehér doboza */
 
 details p {
     margin: 0 14px 16px;
-    padding: 12px 14px;
+    padding: 4px 10px;
 
-    background-color: white;
-    border-radius: 4px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
 
     font-family: Palanquin, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
 
-    color: #54370d;
+    color: var(--text-color-one);
 }
 
 /* Mobilnézet */
