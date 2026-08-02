@@ -108,13 +108,13 @@ li > a {
   text-decoration: none;
 }
 
+/* slider  */
 .slider {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 500px;
-
   overflow: hidden;
 }
 .slider input {
@@ -128,7 +128,6 @@ li > a {
   width: 400%;
   transition: all 200ms ease-in-out;
 }
-
 .slider-wrapper img {
   display: block;
   height: 100%;
@@ -136,15 +135,11 @@ li > a {
   object-fit: cover;
   border-top-right-radius: 100px;
 }
-
 .slider-element {
   display: block;
 
   width: calc(100% / 4);
   padding: 0px clamp(20px, 5vw, 120px);
-}
-
-.slider-txt {
 }
 .slider input[value="one"]:checked ~ .slider-wrapper {
   transform: translateX(calc(150% / 4));
@@ -157,6 +152,32 @@ li > a {
 }
 .slider input[value="four"]:checked ~ .slider-wrapper {
   transform: translateX(calc(-150% / 4));
+}
+
+.carousel-section {
+  width: 400px;
+}
+
+/* picture carousel  */
+.carousel-section img {
+  margin: 120px 0;
+  height: 440px;
+  width: 300px;
+  object-fit: cover;
+}
+.carousel-img {
+  border-radius: 16px;
+  box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  transform: perspective(300px) rotateY(10deg) translateX(-50px);
+  transition: all 255ms ease-in-out;
+}
+.carousel-img:hover {
+  z-index: 2;
+  transform: perspective(300px) rotateY(0deg) translateX(0px);
+  margin-left: 20px;
+}
+.carousel-img:hover ~ .carousel-img {
+  transform: perspective(300px) rotateY(-10deg) translateX(50px);
 }
 
 footer {
