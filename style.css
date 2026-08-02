@@ -114,12 +114,17 @@ li>a {
 }
 
 /* <---- start section contact -----> */
+section-Contact{
+  padding: 40px 0;
+}
+
 .contact {
   width: 100%;
   display: grid;
   font-family: "Palanquin";
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .contact p,
@@ -135,12 +140,22 @@ label {
 .top{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 17px;
   justify-content: center;
-
 }
+
+/* .top>div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  justify-content: space-between;
+} */
 .form-box-bottom{
+  display: flex;
+  flex-direction: column;
+
   width: 100%;
   padding-top: 17px;
 }
@@ -179,7 +194,6 @@ label {
   color: var(--main-color);
   font-size: var(--font-follow);
   border-bottom: 1px solid var(--text-color-one);
-
 
 }
 
@@ -220,8 +234,28 @@ label {
 .contact-checkbox:checked::after{
   opacity: 1;
 }
-/* <---- ENDE -- checkbox -----> */
 
+.button-send{
+  width: 139px;
+  height: 48px;
+  padding: 8px 0 9px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: var(--main-color);
+  font-size: var(--font-follow);
+  border-bottom: 1px solid var(--text-color-one);
+  border-radius: 40px;
+}
+
+
+/* <---- ENDE -- checkbox -----> */
+.contact-policy{
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+
+}
 .inline-link {
   color: var(--main-color);
   text-decoration: none;
