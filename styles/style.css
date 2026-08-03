@@ -153,12 +153,19 @@ li > a {
 .slider input[value="four"]:checked ~ .slider-wrapper {
   transform: translateX(calc(-150% / 4));
 }
+/* .slider-txt {
+  position: relative;
+  height: 300px;
+  width: 100px;
+}
+.slider-txte {
+  position: absolute;
+} */
 
+/* picture carousel  */
 .carousel-section {
   width: 400px;
 }
-
-/* picture carousel  */
 .carousel-section img {
   margin: 120px 0;
   height: 440px;
