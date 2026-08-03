@@ -17,6 +17,9 @@ time {
   width: 20px;
   height: 20px;
 }
+.data-gap {
+  gap: 8px;
+}
 
 @media screen and (min-width: 769px) {
 }
@@ -28,6 +31,7 @@ time {
   border-radius: 30px;
   display: flex;
   justify-content: left;
+  margin-top: 100px;
 }
 .pro-tipps a {
   color: var(--main-color);
@@ -64,7 +68,7 @@ time {
 }
 
 ol {
-  padding-inline-start: 20px;
+  padding-inline-start: 26px;
 }
 
 .edgerelative {
@@ -77,5 +81,33 @@ ol {
   transform: rotate(-12deg);
 }
 
-/* top: -65px;
-  left: -45px; */
+/* Author  */
+.author {
+  background: var(--main-color-transparent);
+  text-align: center;
+  padding: 16px 8px;
+  border-radius: 30px;
+}
+
+.author img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  object-position: -40px;
+  border-radius: 50%;
+}
+
+.author h1 {
+  margin-top: 16px;
+}
+
+.author h1,
+.author h6 {
+  font-size: var(--font-author);
+  color: var(--text-color-one);
+  line-height: 19px;
+}
+
+.author h6 {
+  margin-bottom: 8px;
+}
