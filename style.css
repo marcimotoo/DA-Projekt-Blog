@@ -81,7 +81,7 @@ main {
   gap: 12px;
 }
 
-nav {
+.navbar-web {
   height: 70px;
   width: 100%;
 
@@ -91,15 +91,22 @@ nav {
 
   background-color: var(--main-color);
   position: fixed;
+  gap: 100px;
 }
+
 
 nav>img {
   height: 56px;
 }
 
+.navbar-web-links{
+  display: flex;
+  gap: 100px;
+}
+
 /* display none ins ul sonst ist das logo nicht mittig  */
 ul {
-  display: none;
+  display: flex;
 }
 
 li {
@@ -114,10 +121,8 @@ li>a {
 }
 
 /* <---- start section contact -----> */
-/* section-Contact {
-  padding: 40px 0;
-} */
-form{
+
+form {
   padding-bottom: 40px;
 }
 
@@ -131,7 +136,7 @@ form{
 }
 
 .contact p,
-label {
+.contact label {
   color: var(--text-color-one);
 }
 
@@ -152,32 +157,9 @@ label {
 .form-box-bottom {
   display: flex;
   flex-direction: column;
-
   width: 100%;
   padding-top: 17px;
 }
-
-
-.if-02 {
-  display: grid;
-  gap: 6px;
-  width: 100%;
-}
-
-/* .if-02-wrap {
-  position: relative;
-  display: block;
-
-} */
-
-/* .if-02-wrap::after{
-    content: "";
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    height: 2px;
-
-} */
 
 .contact-input {
   width: 100%;
@@ -203,6 +185,8 @@ label {
   cursor: pointer;
   display: grid;
   place-content: center;
+  padding-left: 3px;
+  transition: all 250ms;
 }
 
 .contact-checkbox:hover {
@@ -244,6 +228,7 @@ label {
   border-bottom: 1px solid var(--text-color-one);
   border-radius: 40px;
   cursor: pointer;
+  transition: all 250ms;
 }
 
 .button-send:hover {
@@ -260,7 +245,7 @@ label {
   font-size: var(--font-follow);
   /* border-bottom: 1px solid var(--text-color-one); */
   border-radius: 40px;
-  box-shadow: 2px 4px #4EA487B3;
+  box-shadow: 0px 4px #4ea48752;
 }
 
 .button-send:active {
@@ -277,7 +262,7 @@ label {
   font-size: var(--font-follow);
   /* border-bottom: 1px solid var(--text-color-one); */
   border-radius: 40px;
-  
+
 }
 
 /* <---- ENDE -- checkbox -----> */
@@ -285,12 +270,18 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 0 40px 0;
   flex-direction: column;
+  padding: 8px 0 40px 0;
+  gap: 30px;
+
 
 }
 
-.contact-policy>p{
+.contact-policy>p {
+  padding-left: 8px;
+}
+
+.label-police {
   padding-left: 8px;
 }
 
