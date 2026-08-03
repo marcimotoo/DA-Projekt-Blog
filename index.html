@@ -46,8 +46,8 @@
         </div>
       </section>
       <!-- Highlights -->
-      <section>
-        <div class="main-sections">
+      <section class="flexpadding">
+        <div class="headline">
           <img src="./assets/icons/rocket_launch.svg" alt="kleines symbol einer rackete" />
           <h2>Highlights</h2>
         </div>
@@ -99,9 +99,9 @@
         </section>
       </section>
       <!-- faq section  -->
-      <section class="faq-section" aria-labelledby="faq-title">
+      <section class="flexpadding" aria-labelledby="faq-title">
         <div class="FAQ_wrapper">
-          <div class="Headline">
+          <div class="headline">
             <img src="./IMG/live_help.svg" alt="" />
             <h2 id="faq-title">FAQ</h2>
           </div>
@@ -134,18 +134,42 @@
         </div>
       </section>
       <!-- contact form  -->
-      <section>
-        <div class="main-sections">
+      <section class="section-Contact">
+        <div class="headline">
           <img src="./assets/icons/person_pin.svg" alt="" />
           <h2>Contact form</h2>
         </div>
-        <form>
-          <label for="">What's your name?</label>
-          <input type="text" name="" id="" />
-          <label for="">What's your email?</label>
-          <input type="email" name="" id="" />
-          <label for="">How can I help?</label>
-          <input type="text" name="" id="" />
+
+        <form class="contact">
+          <p>
+            Have a question or an idea to collaborate? <br />
+            Get in touch—I’d love to hear from you and explore how we can work together.
+          </p>
+          <div class="top">
+            <div>
+              <label for="">What's your name?</label>
+              <input class="contact-input" type="text" name="" id="" />
+            </div>
+            <div>
+              <label for="">What's your email?</label>
+              <input class="contact-input" type="email" name="" id="" />
+            </div>
+          </div>
+          <div class="form-box-bottom">
+            <label for="">How can I help?</label>
+            <input class="contact-input" type="text" name="" id="" />
+          </div>
+          <div class="contact-policy">
+            <div class="horizontal">
+              <input class="contact-checkbox" type="checkbox" name="police" id="" />
+              <label class="label-police" for="police"
+                >I've read the
+                <a class="inline-link" href="">privacy policy</a>
+                and agree to the processing of my data as outlined.
+              </label>
+            </div>
+            <input class="button-send" type="button" value="Send" />
+          </div>
         </form>
       </section>
     </main>

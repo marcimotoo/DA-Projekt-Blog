@@ -1,3 +1,5 @@
+/* data headline  */
+
 time {
   color: var(--text-color-one);
 }
@@ -11,8 +13,21 @@ time {
   height: 20px;
   align-items: center;
 }
-
 .data-info img {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (min-width: 769px) {
+}
+
+/* pro tipps  */
+.pro-tipps {
+  background-color: var(--main-color-transparent);
+  padding: 24px 16px;
+  border-radius: 30px;
+}
+
+.pro-tipps a {
+  color: var(--main-color);
 }

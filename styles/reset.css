@@ -37,3 +37,6 @@ h3 {
 .space {
   justify-content: space-between;
 }
+.flexpadding {
+  padding: 0px clamp(15px, 9.86vw - 21.97px, 120px);
+}
