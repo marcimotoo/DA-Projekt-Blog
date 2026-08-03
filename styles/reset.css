@@ -71,6 +71,9 @@ span {
 .gap24 {
   gap: 24px;
 }
+.top-gap h4 {
+  margin-top: 24px;
+}
 .space {
   justify-content: space-between;
 }
@@ -85,4 +88,7 @@ span {
 .underbeach-reverse {
   margin-top: 32px;
   margin-bottom: 40px;
+}
+.max-content {
+  padding: 0px max(calc(50% - 720px), 0px);
 }
