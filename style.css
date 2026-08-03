@@ -327,7 +327,7 @@ footer {
 }
 
 .footer-content>a,
-p {
+.footer-content>a {
   font-family: "Palanquin";
   font-weight: 400;
   text-decoration: none;
