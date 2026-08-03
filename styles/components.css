@@ -27,7 +27,14 @@ time {
   padding: 24px 16px;
   border-radius: 30px;
 }
-
 .pro-tipps a {
   color: var(--main-color);
+}
+.edgerelative {
+  position: relative;
+}
+.edgesolute {
+  position: absolute;
+  top: -65px;
+  left: -45px;
 }
