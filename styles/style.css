@@ -250,7 +250,7 @@ summary::-webkit-details-marker {
 }
 /* Saját lefelé mutató nyíl */
 summary::after {
-  content: url("./icons/arrow.svg");
+  content: url("../assets/icons/arrow.svg");
 
   width: 24px;
   height: 24px;

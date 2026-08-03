@@ -15,7 +15,7 @@
   /* picture-head: 20px - 32px */
   --font-h3: clamp(1.25rem, 1.71vw + 0.82rem, 2rem);
 
-  /* 20px - 40px */
+  /* h4 (h1 top) 20px - 40px */
   --h1-top: clamp(1.25rem, 0.795rem + 2.273vw, 2.5rem);
   /* 18px - 28px */
   --h1-bottom-1: clamp(1.125rem, 0.898rem + 1.136vw, 1.75rem);

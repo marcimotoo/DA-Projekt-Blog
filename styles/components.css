@@ -26,15 +26,56 @@ time {
   background-color: var(--main-color-transparent);
   padding: 24px 16px;
   border-radius: 30px;
+  display: flex;
+  justify-content: left;
 }
 .pro-tipps a {
   color: var(--main-color);
 }
+.pro-tipps-icon {
+  background: var(--main-color);
+  border-radius: 10px;
+  height: 66px;
+  width: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.pro-tipps-icon img {
+  height: 40px;
+  width: 40px;
+  transform: rotate(12deg);
+}
+.pro-tipps-icon > p {
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--second-color);
+  font-size: 28px;
+}
+
+.pro-tipps li {
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-color-one);
+  line-height: 1.2;
+}
+
+ol {
+  padding-inline-start: 20px;
+}
+
 .edgerelative {
   position: relative;
 }
 .edgesolute {
   position: absolute;
-  top: -65px;
-  left: -45px;
+  top: -60px;
+  left: 0px;
+  transform: rotate(-12deg);
 }
+
+/* top: -65px;
+  left: -45px; */
