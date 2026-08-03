@@ -93,11 +93,16 @@ nav > img {
   height: 56px;
 }
 /* display none ins ul sonst ist das logo nicht mittig  */
+
+ol {
+  display: block;
+}
+
 ul {
   display: none;
 }
 
-li {
+header li {
   list-style: none;
 }
 
@@ -330,7 +335,7 @@ footer {
 }
 
 .footer-content > a,
-p {
+.footer-contet > p {
   font-family: "Palanquin";
   font-weight: 400;
   text-decoration: none;

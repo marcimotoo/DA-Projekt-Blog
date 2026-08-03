@@ -1,0 +1,18 @@
+time {
+  color: var(--text-color-one);
+}
+.data-box {
+  display: flex;
+  gap: 16px;
+}
+.data-info {
+  display: flex;
+  gap: 5px;
+  height: 20px;
+  align-items: center;
+}
+
+.data-info img {
+  width: 20px;
+  height: 20px;
+}
