@@ -190,16 +190,52 @@ nav>img {
   color: var(--second-color);
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
   .navbar-web-links{
     display: none;
   }
 }
 
+/* <---- Ende navbar-web -----> */
 
+
+/* <---- start navbar-mobile -----> */
+
+.navbar-mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  background-color: var(--second-color);
+  position: sticky;
+  bottom: 0px;
+}
+
+.navbar-mobile>ul{
+  padding: 0px;
+}
+
+.navbar-mob-links{
+  display: flex;
+  gap: 48px;
+  justify-content: space-around;
+}
+
+.navbar-mob-icon{
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (min-width:769px) {
+  .navbar-mobile{
+  display:none;
+}
+}
 /* display none ins ul sonst ist das logo nicht mittig  */
 ul {
   display: flex;
+
 }
 
 li {
