@@ -10,24 +10,27 @@
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/font.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/share.css" />
   </head>
   <body>
+    <!-- start header -->
     <header>
-      <nav class="horizontal">
-        <img src="./assets/icons/logo.svg" loading="lazy" alt="Weltkugel mit Flugzeug" />
-        <ul>
+      <nav class="navbar-web">
+        <img src="./assets/icons/logo.svg" alt="Weltkugel mit Flugzeug" />
+        <ul class="navbar-web-links">
           <li>
-            <a href="">Highlights</a>
+            <a class="web-links-hig" href="#highlights">Highlights</a>
           </li>
           <li>
-            <a href="">FAQ</a>
+            <a class="web-links-fqa" href="#faq">FAQ</a>
           </li>
           <li>
-            <a href="">Contact </a>
+            <a class="web-links-con" href="#contact">Contact </a>
           </li>
         </ul>
       </nav>
     </header>
+    <!-- end header  -->
     <main class="vertical gap">
       <section class="flexpadding line-height vertical gap24">
         <article class="top-gap">
@@ -131,9 +134,25 @@
           </p>
         </article>
       </section>
+      <!-- share button  -->
+      <div class="share-box">
+        <p>
+          Follow me for more content like this, and<br />
+          share the article with your friends!
+        </p>
+
+        <img src="./assets/icons/share-arrow.svg" alt="" class="share-arrow" />
+
+        <button type="button" class="share-btn">
+          <img src="./assets/icons/share2.svg" alt="" />
+          Share
+        </button>
+      </div>
     </main>
-    <footer>
-      <section class="footer flexpadding space">
+    <!-- end main  -->
+    <!-- footer  -->
+    <footer class="max-content">
+      <section class="footer horizontal flexpadding">
         <section class="footer-content">
           <a href="">Imprint</a>
           <a href="">Cookie Preferences</a>
@@ -147,5 +166,30 @@
         </section>
       </section>
     </footer>
+    <!-- nav bottem  -->
+    <nav class="navbar-mobile">
+      <ul class="navbar-mob-links">
+        <li>
+          <a class="mob-links-Hom" href="index.html">
+            <img class="navbar-mob-icon" src="./assets/icons/home.svg" alt="Haus als Link zur Startseite" />
+          </a>
+        </li>
+        <li>
+          <a class="mob-links-hig" href="#highlights">
+            <img class="navbar-mob-icon" src="./assets/icons/rocket_launch-green.svg" alt="Fliegende Rackete i 45 crad, Link zur "
+          /></a>
+        </li>
+        <li>
+          <a class="mob-links-fqa" href="#faq">
+            <img class="navbar-mob-icon" src="./assets/icons/live_help-green.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a class="mob-links-con" href="#contact">
+            <img class="navbar-mob-icon" src="./assets/icons/person_pin-green.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

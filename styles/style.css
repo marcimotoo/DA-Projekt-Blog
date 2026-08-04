@@ -76,6 +76,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 12px;
+  margin-top: 120px;
 }
 
 header {
@@ -105,6 +106,7 @@ nav > img {
 .navbar-web-links {
   display: flex;
   gap: 100px;
+  padding-inline-start: 0px;
 }
 
 .web-links-hig:hover {
@@ -119,7 +121,7 @@ nav > img {
   position: absolute;
   left: 0;
   bottom: -6px;
-  width: 110%;
+  width: 100%;
   height: 20px;
   background-image: url("../assets/icons/Highlighta_underline.svg");
   background-repeat: no-repeat;
@@ -147,7 +149,7 @@ nav > img {
   position: absolute;
   left: 0;
   bottom: -12px;
-  width: 110%;
+  width: 100%;
   height: 20px;
   background-image: url("../assets/icons/faq_underline.svg");
   background-repeat: no-repeat;
@@ -175,7 +177,7 @@ nav > img {
   position: absolute;
   left: 0;
   bottom: -12px;
-  width: 110%;
+  width: 100%;
   height: 20px;
   background-image: url("../assets/icons/contact_underline.svg");
   background-repeat: no-repeat;
@@ -189,12 +191,6 @@ nav > img {
 
 .web-links-con:active {
   color: var(--second-color);
-}
-
-@media screen and (max-width: 769px) {
-  .navbar-web-links {
-    display: none;
-  }
 }
 
 /* <---- Ende navbar-web -----> */
@@ -215,6 +211,7 @@ nav > img {
 
 .navbar-mobile > ul {
   padding: 0px;
+  list-style: none;
 }
 
 .navbar-mob-links {
@@ -228,18 +225,13 @@ nav > img {
   width: 40px;
 }
 
-@media screen and (min-width: 769px) {
-  .navbar-mobile {
-    display: none;
-  }
-}
 /* end navbar-mobile  */
 
 ul {
   display: flex;
 }
 
-li {
+header li {
   list-style: none;
 }
 
@@ -254,19 +246,35 @@ ol {
   display: block;
 }
 
-/* li {
+li {
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   color: var(--text-color-one);
-} */
+}
 
 header li {
   list-style: none;
 }
 
-/* slider  */
+/* highlights slider  */
+.highlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlights p {
+  font-size: 24px;
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  max-width: 980px;
+  margin-bottom: 90px;
+}
+
 .slider {
   position: relative;
   display: flex;
@@ -396,7 +404,7 @@ summary {
   cursor: pointer;
 
   font-family: Palanquin, Arial, sans-serif;
-  font-size: 24px;
+  font-size: var(--font-faq);
   font-weight: 700;
   line-height: 1;
 
@@ -440,32 +448,6 @@ details p {
 }
 /* Mobilnézet */
 
-@media (max-width: 768px) {
-  .faq-section {
-    padding: 32px 16px;
-  }
-
-  .Headline {
-    margin-bottom: 32px;
-  }
-
-  .Headline h2 {
-    font-size: 40px;
-  }
-
-  .questions {
-    gap: 20px;
-  }
-
-  summary {
-    font-size: 20px;
-  }
-
-  details p {
-    font-size: 18px;
-  }
-}
-
 /* <---- start section contact -----> */
 
 form {
@@ -484,12 +466,17 @@ form {
 .contact p,
 .contact label {
   color: var(--text-color-one);
+  line-height: 20px;
 }
 
 .contact > P {
   text-align: center;
   padding: 24px 0px;
   line-height: 110%;
+  font-size: 24px;
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 500;
 }
 
 .top {
@@ -532,6 +519,7 @@ form {
   place-content: center;
   padding-left: 3px;
   transition: all 250ms;
+  margin-top: 5px;
 }
 
 .contact-checkbox:hover {
@@ -643,6 +631,7 @@ form {
 
 /* footer  */
 footer {
+  background: var(--main-color);
 }
 .footer {
   height: 134px;
@@ -651,8 +640,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: var(--main-color);
-
-  padding: 5px 10px;
 }
 /* .footer {
   width: 100%;
@@ -677,6 +664,7 @@ footer {
 
 .footer-content > p {
   font-size: var(--font-author);
+  color: white;
 }
 
 .footer-social {
@@ -691,8 +679,49 @@ footer {
   height: 24px;
 }
 
-@media screen and (min-width: 1440px) {
-  nav {
+@media screen and (max-width: 769px) {
+  .top-gap h4 {
+    margin-top: 94px;
+  }
+
+  .headline {
+    margin-top: 80px;
+    margin-bottom: 32px;
+  }
+
+  .highlights p {
+    display: none;
+  }
+
+  /* navbar  */
+
+  .navbar-web-links {
+    display: none;
+  }
+  /* faq  */
+  .faq-section {
+    padding: 32px 16px;
+  }
+  .Headline {
+    margin-bottom: 32px;
+  }
+  .Headline h2 {
+    font-size: 40px;
+  }
+  .questions {
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* faq */
+  .navbar-mobile {
+    display: none;
+  }
+
+  .navbar-web {
     position: inherit;
+    justify-content: inherit;
+    padding-left: 150px;
   }
 }
