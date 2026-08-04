@@ -12,24 +12,25 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <!-- header -->
+    <!-- start header -->
     <header>
-      <nav class="horizontal">
-        <img src="./assets/icons/logo.svg" loading="lazy" alt="Weltkugel mit Flugzeug" />
-        <ul>
+      <nav class="navbar-web">
+        <img src="./assets/icons/logo.svg" alt="Weltkugel mit Flugzeug" />
+        <ul class="navbar-web-links">
           <li>
-            <a href="">Highlights</a>
+            <a class="web-links-hig" href="">Highlights</a>
           </li>
           <li>
-            <a href="">FAQ</a>
+            <a class="web-links-fqa" href="">FAQ</a>
           </li>
           <li>
-            <a href="">Contact </a>
+            <a class="web-links-con" href="">Contact </a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- main -->
+    <!-- end header  -->
+    <!-- start main -->
     <main class="vertical gap">
       <section class="landing-section">
         <!-- <img class="landing-animation" src="./assets/img/landing-animation-2.svg" alt="" /> -->
@@ -173,18 +174,47 @@
         </form>
       </section>
     </main>
-    <footer class="horizontal">
-      <section class="footer-content">
-        <a href="">Imprint</a>
-        <a href="">Cookie Preferences</a>
-        <p>© Travel Blog 2026</p>
-      </section>
-      <section class="footer-social">
-        <a href="https://www.tiktok.com" target="_blank"><img src="./assets/icons/Tiktok_icon 1.svg" alt="" /></a>
-        <a href="https://www.youtube.com" target="_blank"><img src="./assets/icons/youtube.svg" alt="" /></a>
-        <a href="https://www.facebook.com" target="_blank"><img src="./assets/icons/facebook.svg" alt="" /></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="./assets/icons/Instagram_logo_2016 1.svg" alt="" /></a>
+    <!-- end main  -->
+    <!-- footer  -->
+    <footer class="max-content">
+      <section class="footer horizontal flexpadding">
+        <section class="footer-content">
+          <a href="">Imprint</a>
+          <a href="">Cookie Preferences</a>
+          <p>© Travel Blog 2026</p>
+        </section>
+        <section class="footer-social">
+          <a href="https://www.tiktok.com" target="_blank"><img src="./assets/icons/Tiktok_icon 1.svg" alt="" /></a>
+          <a href="https://www.youtube.com" target="_blank"><img src="./assets/icons/youtube.svg" alt="" /></a>
+          <a href="https://www.facebook.com" target="_blank"><img src="./assets/icons/facebook.svg" alt="" /></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="./assets/icons/Instagram_logo_2016 1.svg" alt="" /></a>
+        </section>
       </section>
     </footer>
+    <!-- nav bottem  -->
+    <nav class="navbar-mobile">
+      <ul class="navbar-mob-links">
+        <li>
+          <a class="mob-links-Hom" href="">
+            <img class="navbar-mob-icon" src="./assets/icons/home.svg" alt="Haus als Link zur Startseite" />
+          </a>
+        </li>
+        <li>
+          <a class="mob-links-hig" href="">
+            <img class="navbar-mob-icon" src="./assets/icons/rocket_launch-green.svg" alt="Fliegende Rackete i 45 crad, Link zur "
+          /></a>
+        </li>
+        <li>
+          <a class="mob-links-fqa" href="">
+            <img class="navbar-mob-icon" src="./assets/icons/live_help-green.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a class="mob-links-con" href="">
+            <img class="navbar-mob-icon" src="./assets/icons/person_pin-green.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

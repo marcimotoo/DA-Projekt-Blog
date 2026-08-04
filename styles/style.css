@@ -2,6 +2,7 @@ main {
   padding: 0px max(calc(50% - 720px), 0px);
 }
 
+/* start landing  */
 .landing-section {
   background-image: url(../assets/img/landing.jpg);
   background-position: 65%;
@@ -69,6 +70,8 @@ main {
   }
 }
 
+/* end landing  */
+
 .headline {
   display: flex;
   justify-content: center;
@@ -79,38 +82,164 @@ header {
   padding: 0px max(calc(50% - 720px), 0px);
   background-color: var(--main-color);
 }
+/* <---- start navbar-web -----> */
 
-nav {
-  z-index: 3;
+.navbar-web {
   height: 70px;
   width: 100%;
+
+  display: flex;
   align-items: center;
   justify-content: center;
+
   background-color: var(--main-color);
-  position: sticky;
+  position: fixed;
+  gap: 100px;
+  z-index: 50;
 }
+
 nav > img {
   height: 56px;
 }
-/* display none ins ul sonst ist das logo nicht mittig  */
 
-ol {
-  display: block;
+.navbar-web-links {
+  display: flex;
+  gap: 100px;
 }
 
+.web-links-hig:hover {
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.web-links-hig:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 110%;
+  height: 20px;
+  background-image: url("../assets/icons/Highlighta_underline.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.web-links-hig:hover:after {
+  opacity: 1;
+}
+
+.web-links-hig:active {
+  color: var(--second-color);
+}
+
+.web-links-fqa:hover {
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.web-links-fqa:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 110%;
+  height: 20px;
+  background-image: url("../assets/icons/faq_underline.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.web-links-fqa:hover:after {
+  opacity: 1;
+}
+
+.web-links-fqa:active {
+  color: var(--second-color);
+}
+
+.web-links-con:hover {
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.web-links-con:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 110%;
+  height: 20px;
+  background-image: url("../assets/icons/contact_underline.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.web-links-con:hover:after {
+  opacity: 1;
+}
+
+.web-links-con:active {
+  color: var(--second-color);
+}
+
+@media screen and (max-width: 769px) {
+  .navbar-web-links {
+    display: none;
+  }
+}
+
+/* <---- Ende navbar-web -----> */
+
+/* <---- start navbar-mobile -----> */
+
+.navbar-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  background-color: var(--second-color);
+  position: sticky;
+  bottom: 0px;
+  z-index: 50;
+}
+
+.navbar-mobile > ul {
+  padding: 0px;
+}
+
+.navbar-mob-links {
+  display: flex;
+  gap: 48px;
+  justify-content: space-around;
+}
+
+.navbar-mob-icon {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+/* end navbar-mobile  */
+
 ul {
-  display: none;
+  display: flex;
 }
 
 li {
-  font-family: "Palanquin";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  color: var(--text-color-one);
-}
-
-header li {
   list-style: none;
 }
 
@@ -119,6 +248,22 @@ li > a {
   font-family: "Arima";
   font-weight: 700;
   text-decoration: none;
+}
+
+ol {
+  display: block;
+}
+
+/* li {
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-color-one);
+} */
+
+header li {
+  list-style: none;
 }
 
 /* slider  */
@@ -497,21 +642,25 @@ form {
 }
 
 /* footer  */
-
 footer {
-  background-color: var(--main-color);
-
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px max(calc(50% - 720px), 0px);
 }
 .footer {
+  height: 134px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+
+  padding: 5px 10px;
+}
+/* .footer {
   width: 100%;
   height: 134px;
   display: flex;
   align-items: last baseline;
   padding-bottom: 16px;
-}
+} */
 
 .footer-content {
   display: flex;
@@ -531,9 +680,10 @@ footer {
 }
 
 .footer-social {
+  height: 60%;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: flex-end;
   gap: 16px;
 }
 
