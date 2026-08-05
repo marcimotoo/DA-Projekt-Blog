@@ -23,7 +23,7 @@ h1 {
   font-weight: 700;
 }
 .line-height h1 {
-  line-height: 40px;
+  line-height: 1.2;
 }
 h2 {
   font-size: var(--font-h2);

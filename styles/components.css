@@ -21,9 +21,6 @@ time {
   gap: 8px;
 }
 
-@media screen and (min-width: 769px) {
-}
-
 /* pro tipps  */
 .pro-tipps {
   background-color: var(--main-color-transparent);
@@ -110,4 +107,30 @@ ol {
 
 .author h6 {
   margin-bottom: 8px;
+}
+
+.section-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px clamp(15px, 9.86vw - 21.97px, 120px);
+}
+
+.section-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+  object-fit: cover;
+  margin: 0 15%;
+}
+
+@media screen and (min-width: 769px) {
+  .edgesolute {
+    position: absolute;
+    top: -45px;
+    left: -50px;
+    transform: rotate(-12deg);
+  }
 }
