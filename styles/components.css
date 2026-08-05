@@ -53,7 +53,9 @@ header.main-header>section>h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 32px;
+}
+.right{
+  padding-right: 32px;
 }
 
 .Info-box {
