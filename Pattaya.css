@@ -11,15 +11,6 @@ body {
     color: #3D3D3D;
     font-family: "Palanquin", Arial, sans-serif;
 }
-
-/*
-.pattaya h1,
-.pattaya h2,
-.pattaya p {
-    margin: 0;
-}
-*/
-
 /* 1. SZEKCIÓ */
 
 .intro-section,
@@ -249,11 +240,12 @@ body {
     margin-bottom: 88px;
 }
 
+/* ---------- SHARE ---------- */
 
 .share-box {
     position: relative;
     width: 493px;
-    height: 154px;
+    min-height: 154px;
     margin: 0 auto 88px;
 
     color: #54370D;
@@ -264,7 +256,7 @@ body {
     text-align: center;
 }
 
-.share-box>p {
+.share-box > p {
     width: 463px;
     height: 58px;
     margin: 0 auto;
@@ -284,36 +276,46 @@ body {
 }
 
 
+/* Aufklappbarer Bereich */
+
+.share-menu {
+    margin-top: 48px;
+}
+
 .share-btn {
-    position: absolute;
     width: 158px;
     height: 48px;
-
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+    margin: 0 auto;
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 
-    border: 0;
+    list-style: none;
     border-radius: 40px;
     background: #4EA487;
     color: #F1C953;
-
     cursor: pointer;
 
     font-family: "Arima", Georgia, serif;
     font-size: 24px;
     font-weight: 700;
-}
-
-.share-btn {
 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+    transition:
+        background-color 0.2s,
+        box-shadow 0.2s,
+        transform 0.1s;
+}
+
+.share-btn::-webkit-details-marker {
+    display: none;
+}
+
+.share-btn img {
+    width: 24px;
+    height: 24px;
 }
 
 .share-btn:hover {
@@ -323,31 +325,63 @@ body {
 
 .share-btn:active {
     background: #397A65;
-    transform: translateX(-50%) scale(0.96);
+    transform: scale(0.96);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-.share-btn img {
-    width: 24px;
-    height: 24px;
+
+/* Aufgeklappte Auswahl */
+
+.share-options {
+    width: 100%;
+    margin: 12px auto 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
+
+.share-options a {
+    flex: 1 1 100px;
+    padding: 8px 12px;
+
+    border-radius: 20px;
+    background: rgba(78, 164, 135, 0.20);
+    color: #54370D;
+
+    font-family: "Palanquin", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.share-options a:hover {
+    background: rgba(78, 164, 135, 0.35);
+}
+
+
+/* ---------- MOBILE SHARE ---------- */
 
 @media (max-width: 600px) {
 
     .share-box {
         width: 343px;
         max-width: calc(100% - 32px);
-        height: 140px;
+        min-height: 140px;
 
         font-size: 18px;
         line-height: 1.2;
     }
 
-    .share-box>p {
+    .share-box > p {
         width: 343px;
         max-width: 100%;
         height: 44px;
         margin: 0 auto;
+    }
+
+    .share-arrow {
+        display: none;
     }
 
     .share-arrow-mobile {
@@ -355,19 +389,36 @@ body {
         position: absolute;
         width: 34px;
         height: auto;
-        left: 0px;
+        left: 0;
         top: 52px;
     }
 
-    .share-arrow {
-        display: none;
+    .share-menu {
+        margin-top: 48px;
     }
 
-    .share-btn {
-        width: 158px;
-        height: 48px;
-        bottom: 0;
+    .share-options {
+        width: 300px;
+        max-width: 100%;
     }
+
+    .share-options a {
+        flex: 1 1 130px;
+    }
+}
+.share-menu {
+    position: relative;
+}
+
+.share-options {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    width: 300px;
+    margin: 0;
 }
 
 /* ---------- DESKTOP NAVBAR ---------- */
