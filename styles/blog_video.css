@@ -1,0 +1,19 @@
+.section-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 137px 0px;
+}
+
+.section-video video {
+    width: 930px;
+    height: 520px;
+    display: block;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+/* .abstand{
+    line-height: 1.2;
+} */
