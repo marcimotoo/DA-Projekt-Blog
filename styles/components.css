@@ -3,9 +3,34 @@
 time {
   color: var(--text-color-one);
 }
+
 .data-box {
   display: flex;
   gap: 16px;
+}
+
+/* <--- Header style angepasst ---> */
+.box-data {
+  display: flex;
+  padding-top: 8px;
+  gap: 32px;
+}
+
+/* <--- Start CSS Header im main ---> */
+
+header.main-header{
+  display: flex;
+  flex-wrap: wrap;
+  background: none;
+  padding-top: 80px;
+}
+
+header.main-header>section{
+  flex: 1 1 500px;  
+}
+
+header.main-header>section>h1{
+  line-height: 1.1;
 }
 .data-info {
   display: flex;
@@ -13,10 +38,58 @@ time {
   height: 20px;
   align-items: center;
 }
+
 .data-info img {
   width: 20px;
   height: 20px;
 }
+
+.Info-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+/* <--- Start CSS für AuthorCard ---> */
+.author-box {
+  width: 272px;
+  height: 390px;
+  flex: 0 0 272px;
+  background: var(--main-color-transparent);
+  text-align: center;
+  padding: 16px 8px;
+  border-radius: 30px;
+}
+
+.author-box>img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author-box>h3,
+.author-box>h6{
+  font-size: var(--font-author);
+  color: var(--text-color-one);
+  line-height: 19px;
+}
+
+.author-box>h3{
+padding-top: 16px;
+font-weight: 700;
+}
+
+.author-box>h6{
+  padding-bottom: 12px;
+} 
+.author-box>p{
+  padding-bottom: 12px;
+  text-align: left;
+}
+/* <--- Ende CSS für AuthorCard ---> */
+/* <--- End für die Daten box ---> */
+
+
 .data-gap {
   gap: 8px;
 }
@@ -30,9 +103,11 @@ time {
   justify-content: left;
   margin-top: 100px;
 }
+
 .pro-tipps a {
   color: var(--main-color);
 }
+
 .pro-tipps-icon {
   background: var(--main-color);
   border-radius: 10px;
@@ -43,12 +118,14 @@ time {
   align-items: center;
   gap: 10px;
 }
+
 .pro-tipps-icon img {
   height: 40px;
   width: 40px;
   transform: rotate(12deg);
 }
-.pro-tipps-icon > p {
+
+.pro-tipps-icon>p {
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 700;
@@ -71,6 +148,7 @@ ol {
 .edgerelative {
   position: relative;
 }
+
 .edgesolute {
   position: absolute;
   top: -60px;
