@@ -9,14 +9,14 @@
   /* TEXT */
 
   /* h1-text: 40px - 64px */
-  --font-h1: clamp(2.5rem, 2.14vw + 1.64rem, 4rem);
+  --font-h1: clamp(2.5rem, 1.333rem + 3.111vw, 4rem);
   /* heighlights,faq,contact: 40px - 52px */
   --font-h2: clamp(2.5rem, 1.71vw + 2.07rem, 3.25rem);
   /* picture-head: 20px - 32px */
   --font-h3: clamp(1.25rem, 1.71vw + 0.82rem, 2rem);
 
-  /* 20px - 40px */
-  --h1-top: clamp(1.25rem, 0.795rem + 2.273vw, 2.5rem);
+  /* h4 (h1 top) 20px - 40px */
+  --h1-top: clamp(1.25rem, calc(0.326rem + 3.913vw), 2.5rem);
   /* 18px - 28px */
   --h1-bottom-1: clamp(1.125rem, 0.898rem + 1.136vw, 1.75rem);
   /* 18px - 32px */
