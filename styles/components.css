@@ -18,20 +18,25 @@ time {
 
 /* <--- Start CSS Header im main ---> */
 
-header.main-header{
+header.main-header {
   display: flex;
   flex-wrap: wrap;
   background: none;
   padding-top: 80px;
 }
 
-header.main-header>section{
-  flex: 1 1 500px;  
+header.main-header>section {
+  flex: 1 1 500px;
 }
 
-header.main-header>section>h1{
+header.main-header>section>p {
+  padding: 8px 0 40px 0px;
+}
+
+header.main-header>section>h1 {
   line-height: 1.1;
 }
+
 .data-info {
   display: flex;
   gap: 5px;
@@ -44,11 +49,19 @@ header.main-header>section>h1{
   height: 20px;
 }
 
+.box-data-in {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+}
+
 .Info-box {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
+
 /* <--- Start CSS für AuthorCard ---> */
 .author-box {
   width: 272px;
@@ -68,147 +81,156 @@ header.main-header>section>h1{
 }
 
 .author-box>h3,
-.author-box>h6{
+.author-box>h6 {
   font-size: var(--font-author);
   color: var(--text-color-one);
   line-height: 19px;
 }
 
-.author-box>h3{
-padding-top: 16px;
-font-weight: 700;
+.author-box>h3 {
+  padding-top: 16px;
+  font-weight: 700;
 }
 
-.author-box>h6{
+.author-box>h6 {
   padding-bottom: 12px;
-} 
-.author-box>p{
+}
+
+.author-box>p {
   padding-bottom: 12px;
   text-align: left;
 }
-/* <--- Ende CSS für AuthorCard ---> */
-/* <--- End für die Daten box ---> */
 
-
-.data-gap {
-  gap: 8px;
-}
-
-/* pro tipps  */
-.pro-tipps {
-  background-color: var(--main-color-transparent);
-  padding: 24px 16px;
-  border-radius: 30px;
-  display: flex;
-  justify-content: left;
-  margin-top: 100px;
-}
-
-.pro-tipps a {
-  color: var(--main-color);
-}
-
-.pro-tipps-icon {
-  background: var(--main-color);
-  border-radius: 10px;
-  height: 66px;
-  width: 196px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.pro-tipps-icon img {
-  height: 40px;
-  width: 40px;
-  transform: rotate(12deg);
-}
-
-.pro-tipps-icon>p {
-  font-family: "Palanquin";
-  font-style: normal;
-  font-weight: 700;
-  color: var(--second-color);
-  font-size: 28px;
-}
-
-.pro-tipps li {
-  font-family: "Palanquin";
-  font-style: normal;
-  font-weight: 400;
-  color: var(--text-color-one);
-  line-height: 1.2;
-}
-
-ol {
-  padding-inline-start: 26px;
-}
-
-.edgerelative {
-  position: relative;
-}
-
-.edgesolute {
-  position: absolute;
-  top: -60px;
-  left: 0px;
-  transform: rotate(-12deg);
-}
-
-/* Author  */
-.author {
-  background: var(--main-color-transparent);
-  text-align: center;
-  padding: 16px 8px;
-  border-radius: 30px;
-}
-
-.author img {
-  height: 120px;
-  width: 120px;
-  object-fit: cover;
-  object-position: -40px;
-  border-radius: 50%;
-}
-
-.author h1 {
-  margin-top: 16px;
-}
-
-.author h1,
-.author h6 {
-  font-size: var(--font-author);
-  color: var(--text-color-one);
-  line-height: 19px;
-}
-
-.author h6 {
-  margin-bottom: 8px;
-}
-
-.section-video {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px clamp(15px, 9.86vw - 21.97px, 120px);
-}
-
-.section-video video {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 30px;
-  object-fit: cover;
-  margin: 0 15%;
-}
-
-@media screen and (min-width: 769px) {
-  .edgesolute {
-    position: absolute;
-    top: -45px;
-    left: -50px;
-    transform: rotate(-12deg);
+@media screen and (max-width: 940px) {
+  header.main-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
+  /* <--- Ende CSS für AuthorCard ---> */
+  /* <--- End für die Daten box ---> */
+
+
+  .data-gap {
+    gap: 8px;
+  }
+
+  /* pro tipps  */
+  .pro-tipps {
+    background-color: var(--main-color-transparent);
+    padding: 24px 16px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: left;
+    margin-top: 100px;
+  }
+
+  .pro-tipps a {
+    color: var(--main-color);
+  }
+
+  .pro-tipps-icon {
+    background: var(--main-color);
+    border-radius: 10px;
+    height: 66px;
+    width: 196px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pro-tipps-icon img {
+    height: 40px;
+    width: 40px;
+    transform: rotate(12deg);
+  }
+
+  .pro-tipps-icon>p {
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 700;
+    color: var(--second-color);
+    font-size: 28px;
+  }
+
+  .pro-tipps li {
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text-color-one);
+    line-height: 1.2;
+  }
+
+  ol {
+    padding-inline-start: 26px;
+  }
+
+  .edgerelative {
+    position: relative;
+  }
+
+  .edgesolute {
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    transform: rotate(-12deg);
+  }
+
+  /* Author  */
+  .author {
+    background: var(--main-color-transparent);
+    text-align: center;
+    padding: 16px 8px;
+    border-radius: 30px;
+  }
+
+  .author img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    object-position: -40px;
+    border-radius: 50%;
+  }
+
+  .author h1 {
+    margin-top: 16px;
+  }
+
+  .author h1,
+  .author h6 {
+    font-size: var(--font-author);
+    color: var(--text-color-one);
+    line-height: 19px;
+  }
+
+  .author h6 {
+    margin-bottom: 8px;
+  }
+
+  .section-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px clamp(15px, 9.86vw - 21.97px, 120px);
+  }
+
+  .section-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+    object-fit: cover;
+    margin: 0 15%;
+  }
+
+  @media screen and (min-width: 769px) {
+    .edgesolute {
+      position: absolute;
+      top: -45px;
+      left: -50px;
+      transform: rotate(-12deg);
+    }
+  }
