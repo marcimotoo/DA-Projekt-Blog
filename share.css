@@ -186,3 +186,35 @@
     margin: 0;
 }
 
+.share-menu {
+    width: fit-content !important;
+    height: auto !important;
+    margin: 48px auto 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.share-btn::after {
+    content: none !important;
+    display: none !important;
+}
+
+.share-menu {
+    overflow: visible !important;
+}
+
+.share-btn {
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+    .share-box {
+        height: auto !important;
+    }
+
+    .share-menu[open] {
+        margin-bottom: 230px !important;
+    }
+}

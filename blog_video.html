@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="./styles/variables.css" />
   <link rel="stylesheet" href="./styles/font.css" />
   <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./styles/share.css" />
-  <link rel="stylesheet" href="./styles/blog_video.css" />
+  <link rel="stylesheet" href="./share.css" />
 </head>
 
 <body>
@@ -151,28 +150,40 @@
         </ol>
       </article>
     </section>
-    <!-- share button  -->
+
     <div class="share-box">
       <p>
-        Follow me for more content like this, and<br />
+        Follow me for more content like this, and<br>
         share the article with your friends!
       </p>
 
-      <img src="./assets/icons/share-arrow.svg" alt="" class="share-arrow" />
-      <img src="./assets/icons/share-arrow-mini.svg" alt="" class="share-arrow-mobile" />
+      <img src="./assets/icons/share-arrow.svg" alt="" class="share-arrow">
+      <img src="./assets/icons/share-arrow-mobile.svg" alt="" class="share-arrow-mobile">
 
-      <button type="button" class="share-btn">
-        <img src="./assets/icons/share2.svg" alt="" />
-        Share
-      </button>
+      <details class="share-menu">
+        <summary class="share-btn">
+          <img src="./assets/icons/share2.svg" alt="">
+          Share
+        </summary>
+
+        <div class="share-options">
+          <a href="https://www.whatsapp.com" target="_blank">WhatsApp</a>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://mail.google.com" target="_blank">E-Mail</a>
+          <a href="https://x.com" target="_blank">X</a>
+        </div>
+      </details>
     </div>
+
+
+
   </main>
   <!-- end main  -->
   <!-- footer  -->
   <footer class="max-content">
     <section class="footer horizontal flexpadding">
       <section class="footer-content">
-        <a href="">Imprint</a>
+        <a href="./imprint.html">Imprint</a>
         <a href="">Cookie Preferences</a>
         <p>© Travel Blog 2026</p>
       </section>
