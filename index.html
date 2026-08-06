@@ -1,105 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Blog</title>
-    <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/components.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/font.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <!-- start header -->
-    <header>
-      <nav class="navbar-web">
-        <a href="index.html">
-          <img src="./assets/icons/logo.svg" alt="Weltkugel mit Flugzeug" />
-        </a>
-        <ul class="navbar-web-links">
-          <li>
-            <a class="web-links-hig" href="./index.html#highlights">Highlights</a>
-          </li>
-          <li>
-            <a class="web-links-fqa" href="./index.html#faq">FAQ</a>
-          </li>
-          <li>
-            <a class="web-links-con" href="./index.html#contact">Contact </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- end header  -->
-    <!-- start main -->
-    <main class="vertical gap">
-      <section class="landing-section">
-        <!-- Yellow slider -->
-           <!-- old class="landing-animation"  -->
-           
-        <img class="landing-slide_one" src="./assets/img/slider_1.svg" alt="" />
-        <img class="landing-slide_two" src="./assets/img/slider_2.svg" alt="" />
-     
-        <div class="rotation-logo">
-          <div class="rotation-container">
-            <img
-              class="rotation"
-              src="./assets/img/TürkischCircle-160x160.svg"
-              loading="lazy"
-              alt="Ein grüner Kreis, mit Türkischen symbol in der mitte der sich im kreis dreht."
-            />
-            <img class="no-rotation" src="./assets/img/Flag_orb_Turkey 1.svg" loading="lazy" alt="" />
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Blog</title>
+  <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/font.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <!-- start header -->
+  <header>
+    <nav class="navbar-web">
+      <a href="index.html">
+        <img src="./assets/icons/logo.svg" alt="Weltkugel mit Flugzeug" />
+      </a>
+      <ul class="navbar-web-links">
+        <li>
+          <a class="web-links-hig" href="./index.html#highlights">Highlights</a>
+        </li>
+        <li>
+          <a class="web-links-fqa" href="./index.html#faq">FAQ</a>
+        </li>
+        <li>
+          <a class="web-links-con" href="./index.html#contact">Contact </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- end header  -->
+  <!-- start main -->
+  <main class="vertical gap">
+    <section class="landing-section">
+      <!-- Yellow slider -->
+      <!-- old class="landing-animation"  -->
+      <Article class="landing-slidtext">
+        <H3>Cappadocia</H3>
+        <p>
+          From sunrise balloons to hidden cave dwellings, every moment feels unreal in the best way.
+        </p>
+      </Article>
+      <img class="landing-slide_one" src="./assets/img/slider_1.svg" alt="" />
+      <img class="landing-slide_two" src="./assets/img/slider_2.svg" alt="" />
+
+      <div class="rotation-logo">
+        <div class="rotation-container">
+          <img class="rotation" src="./assets/img/TürkischCircle-160x160.svg" loading="lazy"
+            alt="Ein grüner Kreis, mit Türkischen symbol in der mitte der sich im kreis dreht." />
+          <img class="no-rotation" src="./assets/img/Flag_orb_Turkey 1.svg" loading="lazy" alt="" />
         </div>
-      </section>
-      <!-- Highlights -->
-      <section class="flexpadding" id="highlights">
-        <div class="highlights">
-          <div class="headline">
-            <img src="./assets/icons/rocket_launch.svg" alt="kleines symbol einer rackete" />
-            <h2>Highlights</h2>
-          </div>
-          <p>
-            From the vibrant cultures of Asia to the sun-drenched islands of the Caribbean and the serene landscapes of Scandinavia, each destination offers a
-            distinct way to explore the world.
-          </p>
+      </div>
+    </section>
+    <!-- Highlights -->
+    <section class="flexpadding" id="highlights">
+      <div class="highlights">
+        <div class="headline">
+          <img src="./assets/icons/rocket_launch.svg" alt="kleines symbol einer rackete" />
+          <h2>Highlights</h2>
         </div>
-        <!-- slider -->
-        <section class="slider">
-          <input type="radio" name="slider" id="slide-1" checked />
-          <input type="radio" name="slider" id="slide-2" />
-          <input type="radio" name="slider" id="slide-3" />
-          <!-- <input type="radio" name="slider" id="slide-4" /> -->
-          <!-- slider wrapper -->
-          <div class="slider-wrapper">
-            <a class="slider-element" href="./marcel.html">
-              <div class="slider-txt-box1">
-                <h3>The World’s Most Breathtaking Beaches</h3>
-                <p>
-                  From powder-soft white sands to dramatic coastlines kissed by turquoise waves, these beaches are more than destinations — they’re feelings.
-                </p>
-              </div>
-              <img src="./assets/img/slider-1.jpg" loading="lazy" alt="" />
-            </a>
-            <a class="slider-element" href="./blog_video.html">
-              <div class="slider-txt-box2">
-                <h3>Villach Region – Lake Faaker See – Lake Ossiacher See: Nature Adventures & Alpine Charm</h3>
-                <p>Discover Villach, where the Alpine way of life meets Mediterranean flair. Experience crystal-clear lakes, impressive mountain vistas, genuine warmth, and a charming old town in the heart of Carinthia.</p>
-              </div>
-              <img src="./assets/img/European Bike Week.jpg" loading="lazy" alt="" />
-            </a>
-            <a class="slider-element" href="./Pattaya.html">
-              <div class="slider-txt-box3">
-                <h3>Pattaya Pulse: Food, Sun and Neon Nights</h3>
-                <p>
-                  From bustling promenades to nearby islands, the city offers an energetic and diverse escape. Discover Pattaya City, with vibrant nightlife and
-                  rich cultural landmarks.
-                </p>
-              </div>
-              <img src="./assets/img/slider-3.jpg" loading="lazy" alt="" />
-            </a>
-            <!-- <a class="slider-element" href="./index.html">
+        <p>
+          From the vibrant cultures of Asia to the sun-drenched islands of the Caribbean and the serene landscapes of
+          Scandinavia, each destination offers a
+          distinct way to explore the world.
+        </p>
+      </div>
+      <!-- slider -->
+      <section class="slider">
+        <input type="radio" name="slider" id="slide-1" checked />
+        <input type="radio" name="slider" id="slide-2" />
+        <input type="radio" name="slider" id="slide-3" />
+        <!-- <input type="radio" name="slider" id="slide-4" /> -->
+        <!-- slider wrapper -->
+        <div class="slider-wrapper">
+          <a class="slider-element" href="./marcel.html">
+            <div class="slider-txt-box1">
+              <h3>The World’s Most Breathtaking Beaches</h3>
+              <p>
+                From powder-soft white sands to dramatic coastlines kissed by turquoise waves, these beaches are more
+                than destinations — they’re feelings.
+              </p>
+            </div>
+            <img src="./assets/img/slider-1.jpg" loading="lazy" alt="" />
+          </a>
+          <a class="slider-element" href="./blog_video.html">
+            <div class="slider-txt-box2">
+              <h3>Villach Region – Lake Faaker See – Lake Ossiacher See: Nature Adventures & Alpine Charm</h3>
+              <p>Discover Villach, where the Alpine way of life meets Mediterranean flair. Experience crystal-clear
+                lakes, impressive mountain vistas, genuine warmth, and a charming old town in the heart of Carinthia.
+              </p>
+            </div>
+            <img src="./assets/img/European Bike Week.jpg" loading="lazy" alt="" />
+          </a>
+          <a class="slider-element" href="./Pattaya.html">
+            <div class="slider-txt-box3">
+              <h3>Pattaya Pulse: Food, Sun and Neon Nights</h3>
+              <p>
+                From bustling promenades to nearby islands, the city offers an energetic and diverse escape. Discover
+                Pattaya City, with vibrant nightlife and
+                rich cultural landmarks.
+              </p>
+            </div>
+            <img src="./assets/img/slider-3.jpg" loading="lazy" alt="" />
+          </a>
+          <!-- <a class="slider-element" href="./index.html">
               <div class="slider-txt-box4">
                 <h3>Mountain Fuji</h3>
                 <p>
@@ -109,131 +117,135 @@
               </div>
               <img src="./assets/img/slider-4.jpg" loading="lazy" alt="" />
             </a> -->
-          </div>
-          <div class="slider-dots">
-            <label for="slide-1"></label>
-            <label for="slide-2"></label>
-            <label for="slide-3"></label>
-            <!-- <label for="slide-4"></label> -->
-          </div>
-        </section>
-      </section>
-      <!-- faq section  -->
-      <section class="flexpadding" aria-labelledby="faq-title" id="faq">
-        <div class="FAQ_wrapper">
-          <div class="headline">
-            <img src=".//assets/icons/live_help.svg" alt="" />
-            <h2 id="faq-title">FAQ</h2>
-          </div>
-
-          <div class="questions">
-            <details>
-              <summary>What's the story behind my travel blog?</summary>
-
-              <p>This blog was created to share travel experiences, useful tips, and inspiring destinations.</p>
-            </details>
-
-            <details>
-              <summary>How do I plan, document, and share my travels?</summary>
-
-              <p>I research each destination, plan the most important activities, and document my experiences with notes and photographs.</p>
-            </details>
-
-            <details>
-              <summary>How can brands, companies, or fellow creators collaborate with me or get in touch?</summary>
-
-              <p>Collaboration requests can be sent through the contact form below. I am open to suitable travel projects, partnerships, and creative ideas.</p>
-            </details>
-
-            <details>
-              <summary>How can readers support this blog and the work behind it?</summary>
-
-              <p>Readers can support the blog by sharing articles, recommending the website, and following the project on social media.</p>
-            </details>
-          </div>
+        </div>
+        <div class="slider-dots">
+          <label for="slide-1"></label>
+          <label for="slide-2"></label>
+          <label for="slide-3"></label>
+          <!-- <label for="slide-4"></label> -->
         </div>
       </section>
-      <!-- contact form  -->
-      <section class="section-Contact flexpadding" id="contact">
+    </section>
+    <!-- faq section  -->
+    <section class="flexpadding" aria-labelledby="faq-title" id="faq">
+      <div class="FAQ_wrapper">
         <div class="headline">
-          <img src="./assets/icons/person_pin.svg" alt="" />
-          <h2>Contact form</h2>
+          <img src=".//assets/icons/live_help.svg" alt="" />
+          <h2 id="faq-title">FAQ</h2>
         </div>
 
-        <form class="contact">
-          <p>
-            Have a question or an idea to collaborate? <br />
-            Get in touch—I’d love to hear from you and explore how we can work together.
-          </p>
-          <div class="top">
-            <div>
-              <label for="">What's your name?</label>
-              <input class="contact-input" type="text" name="" id="" />
-            </div>
-            <div>
-              <label for="">What's your email?</label>
-              <input class="contact-input" type="email" name="" id="" />
-            </div>
-          </div>
-          <div class="form-box-bottom">
-            <label for="">How can I help?</label>
+        <div class="questions">
+          <details>
+            <summary>What's the story behind my travel blog?</summary>
+
+            <p>This blog was created to share travel experiences, useful tips, and inspiring destinations.</p>
+          </details>
+
+          <details>
+            <summary>How do I plan, document, and share my travels?</summary>
+
+            <p>I research each destination, plan the most important activities, and document my experiences with notes
+              and photographs.</p>
+          </details>
+
+          <details>
+            <summary>How can brands, companies, or fellow creators collaborate with me or get in touch?</summary>
+
+            <p>Collaboration requests can be sent through the contact form below. I am open to suitable travel projects,
+              partnerships, and creative ideas.</p>
+          </details>
+
+          <details>
+            <summary>How can readers support this blog and the work behind it?</summary>
+
+            <p>Readers can support the blog by sharing articles, recommending the website, and following the project on
+              social media.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- contact form  -->
+    <section class="section-Contact flexpadding" id="contact">
+      <div class="headline">
+        <img src="./assets/icons/person_pin.svg" alt="" />
+        <h2>Contact form</h2>
+      </div>
+
+      <form class="contact">
+        <p>
+          Have a question or an idea to collaborate? <br />
+          Get in touch—I’d love to hear from you and explore how we can work together.
+        </p>
+        <div class="top">
+          <div>
+            <label for="">What's your name?</label>
             <input class="contact-input" type="text" name="" id="" />
           </div>
-          <div class="contact-policy">
-            <div class="horizontal">
-              <input class="contact-checkbox" type="checkbox" name="police" id="" />
-              <label class="label-police" for="police"
-                >I've read the
-                <a class="inline-link" href=""> privacy policy </a>
-                and agree to the processing of my data as outlined.
-              </label>
-            </div>
-            <input class="button-send" type="button" value="Send" />
+          <div>
+            <label for="">What's your email?</label>
+            <input class="contact-input" type="email" name="" id="" />
           </div>
-        </form>
+        </div>
+        <div class="form-box-bottom">
+          <label for="">How can I help?</label>
+          <input class="contact-input" type="text" name="" id="" />
+        </div>
+        <div class="contact-policy">
+          <div class="horizontal">
+            <input class="contact-checkbox" type="checkbox" name="police" id="" />
+            <label class="label-police" for="police">I've read the
+              <a class="inline-link" href=""> privacy policy </a>
+              and agree to the processing of my data as outlined.
+            </label>
+          </div>
+          <input class="button-send" type="button" value="Send" />
+        </div>
+      </form>
+    </section>
+  </main>
+  <!-- end main  -->
+  <!-- footer  -->
+  <footer class="max-content">
+    <section class="footer horizontal flexpadding">
+      <section class="footer-content">
+        <a href="./imprint.html">Imprint</a>
+        <a href="">Cookie Preferences</a>
+        <p>© Travel Blog 2026</p>
       </section>
-    </main>
-    <!-- end main  -->
-    <!-- footer  -->
-    <footer class="max-content">
-      <section class="footer horizontal flexpadding">
-        <section class="footer-content">
-          <a href="./imprint.html">Imprint</a>
-          <a href="">Cookie Preferences</a>
-          <p>© Travel Blog 2026</p>
-        </section>
-        <section class="footer-social">
-          <a href="https://www.tiktok.com" target="_blank"><img src="./assets/icons/Tiktok_icon 1.svg" alt="" /></a>
-          <a href="https://www.youtube.com" target="_blank"><img src="./assets/icons/youtube.svg" alt="" /></a>
-          <a href="https://www.facebook.com" target="_blank"><img src="./assets/icons/facebook.svg" alt="" /></a>
-          <a href="https://www.instagram.com" target="_blank"><img src="./assets/icons/Instagram_logo_2016 1.svg" alt="" /></a>
-        </section>
+      <section class="footer-social">
+        <a href="https://www.tiktok.com" target="_blank"><img src="./assets/icons/Tiktok_icon 1.svg" alt="" /></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="./assets/icons/youtube.svg" alt="" /></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="./assets/icons/facebook.svg" alt="" /></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./assets/icons/Instagram_logo_2016 1.svg"
+            alt="" /></a>
       </section>
-    </footer>
-    <!-- nav bottem  -->
-    <nav class="navbar-mobile">
-      <ul class="navbar-mob-links">
-        <li>
-          <a class="mob-links-Hom" href="index.html">
-            <img class="navbar-mob-icon" src="./assets/icons/home.svg" alt="Haus als Link zur Startseite" />
-          </a>
-        </li>
-        <li>
-          <a class="mob-links-hig" href="#highlights">
-            <img class="navbar-mob-icon" src="./assets/icons/rocket_launch-green.svg" alt="Fliegende Rackete i 45 crad, Link zur "
-          /></a>
-        </li>
-        <li>
-          <a class="mob-links-fqa" href="#faq">
-            <img class="navbar-mob-icon" src="./assets/icons/live_help-green.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a class="mob-links-con" href="#contact">
-            <img class="navbar-mob-icon" src="./assets/icons/person_pin-green.svg" alt="" />
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+    </section>
+  </footer>
+  <!-- nav bottem  -->
+  <nav class="navbar-mobile">
+    <ul class="navbar-mob-links">
+      <li>
+        <a class="mob-links-Hom" href="index.html">
+          <img class="navbar-mob-icon" src="./assets/icons/home.svg" alt="Haus als Link zur Startseite" />
+        </a>
+      </li>
+      <li>
+        <a class="mob-links-hig" href="#highlights">
+          <img class="navbar-mob-icon" src="./assets/icons/rocket_launch-green.svg"
+            alt="Fliegende Rackete i 45 crad, Link zur " /></a>
+      </li>
+      <li>
+        <a class="mob-links-fqa" href="#faq">
+          <img class="navbar-mob-icon" src="./assets/icons/live_help-green.svg" alt="" />
+        </a>
+      </li>
+      <li>
+        <a class="mob-links-con" href="#contact">
+          <img class="navbar-mob-icon" src="./assets/icons/person_pin-green.svg" alt="" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
 </html>

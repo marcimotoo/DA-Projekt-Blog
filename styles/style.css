@@ -30,6 +30,34 @@ main {
 }
 
 /* <--- animation landing  */
+.landing-slidtext {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 250px;
+  height: 227px;
+
+  top: 144px;
+  left: 130px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 780px) {
+  .landing-slidtext {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    height: 227px;
+    left: 70px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .landing-slidtext {
+    display: none;
+  }
+}
 
 .landing-slide_one,
 .landing-slide_two {
@@ -37,6 +65,8 @@ main {
   height: 500px;
   position: absolute;
   object-fit: cover;
+
+
 }
 
 .landing-slide_one {
@@ -52,14 +82,17 @@ main {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 @keyframes slideOut_two {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-30%);
   }
@@ -394,8 +427,7 @@ header li {
   border-radius: 12px;
   background-color: white;
   cursor: pointer;
-  transition:
-    width 300ms ease-in-out,
+  transition: width 300ms ease-in-out,
     background-color 300ms ease-in-out;
 }
 
@@ -479,8 +511,7 @@ header li {
   flex-shrink: 0;
   width: 180px;
   transform: perspective(600px) rotateY(-35deg);
-  transition:
-    transform 400ms ease-in-out,
+  transition: transform 400ms ease-in-out,
     margin 400ms ease-in-out;
 }
 
@@ -543,8 +574,7 @@ header li {
   border-radius: 12px;
   background-color: rgba(78, 164, 135, 0.25);
   cursor: pointer;
-  transition:
-    width 300ms ease-in-out,
+  transition: width 300ms ease-in-out,
     background-color 300ms ease-in-out;
 }
 
