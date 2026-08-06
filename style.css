@@ -191,7 +191,7 @@ nav>img {
 }
 
 @media screen and (max-width:769px) {
-  .navbar-web-links{
+  .navbar-web-links {
     display: none;
   }
 }
@@ -201,7 +201,7 @@ nav>img {
 
 /* <---- start navbar-mobile -----> */
 
-.navbar-mobile{
+.navbar-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,26 +212,27 @@ nav>img {
   bottom: 0px;
 }
 
-.navbar-mobile>ul{
+.navbar-mobile>ul {
   padding: 0px;
 }
 
-.navbar-mob-links{
+.navbar-mob-links {
   display: flex;
   gap: 48px;
   justify-content: space-around;
 }
 
-.navbar-mob-icon{
+.navbar-mob-icon {
   height: 40px;
   width: 40px;
 }
 
 @media screen and (min-width:769px) {
-  .navbar-mobile{
-  display:none;
+  .navbar-mobile {
+    display: none;
+  }
 }
-}
+
 /* display none ins ul sonst ist das logo nicht mittig  */
 ul {
   display: flex;
