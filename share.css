@@ -1,13 +1,11 @@
-.share-box,
-.share-box * {
-    box-sizing: border-box;
-}
+
+/* ---------- SHARE ---------- */
 
 .share-box {
     position: relative;
     width: 493px;
     min-height: 154px;
-    margin: 0 auto;
+    margin: 0 auto 88px;
 
     color: #54370D;
     font-family: "Arima", Georgia, serif;
@@ -37,10 +35,9 @@
 }
 
 
-/* SHARE BUTTON */
+/* Aufklappbarer Bereich */
 
 .share-menu {
-    position: relative;
     margin-top: 48px;
 }
 
@@ -48,7 +45,6 @@
     width: 158px;
     height: 48px;
     margin: 0 auto;
-    padding: 0;
 
     display: flex;
     align-items: center;
@@ -56,7 +52,6 @@
     gap: 10px;
 
     list-style: none;
-    border: 0;
     border-radius: 40px;
     background: #4EA487;
     color: #F1C953;
@@ -94,18 +89,11 @@
 }
 
 
-/* AUFKLAPPBARE AUSWAHL */
+/* Aufgeklappte Auswahl */
 
 .share-options {
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-
-    width: 300px;
-    max-width: 100%;
-    margin: 0;
+    width: 100%;
+    margin: 12px auto 0;
 
     display: flex;
     justify-content: center;
@@ -114,7 +102,7 @@
 }
 
 .share-options a {
-    flex: 1 1 130px;
+    flex: 1 1 100px;
     padding: 8px 12px;
 
     border-radius: 20px;
@@ -123,8 +111,6 @@
 
     font-family: "Palanquin", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
     text-decoration: none;
 }
 
@@ -133,7 +119,7 @@
 }
 
 
-/* MOBILE */
+/* ---------- MOBILE SHARE ---------- */
 
 @media (max-width: 600px) {
 
@@ -143,16 +129,24 @@
         min-height: 140px;
 
         font-size: 18px;
+        line-height: 1.2;
     }
 
     .share-box > p {
         width: 343px;
         max-width: 100%;
-        height: 44px;
+        height: auto;
+        margin: 0 auto 8px;
     }
 
     .share-arrow {
         display: none;
+    }
+
+    .share-menu {
+        position: relative;
+        width: 158px;
+        margin: 0 auto;
     }
 
     .share-arrow-mobile {
@@ -160,12 +154,35 @@
         position: absolute;
         width: 34px;
         height: auto;
-        left: 0;
-        top: 52px;
+        left: -18px;
+        top: 60px;
+    }
+
+    .share-menu {
+        margin-top: 48px;
     }
 
     .share-options {
         width: 300px;
         max-width: 100%;
     }
+
+    .share-options a {
+        flex: 1 1 130px;
+    }
 }
+.share-menu {
+    position: relative;
+}
+
+.share-options {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    width: 300px;
+    margin: 0;
+}
+
