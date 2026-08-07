@@ -5,12 +5,13 @@ main {
 /* start landing  */
 .landing-section {
   background-image: url(../assets/img/landing.jpg);
-  background-position: 65%;
+  background-position: 30% center;
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 500px;
   max-width: 1440px;
   overflow: hidden;
+  position: relative;
 }
 
 .landing-animation {
@@ -94,24 +95,64 @@ main {
   }
 
   100% {
-    transform: translateX(-30%);
+    transform: translateX(-52%);
   }
 }
 
+.landing-text {
+  position: absolute;
+  top: 145px;
+  left: 58%;
+  animation: textSlide 5s ease forwards;
+  width: 345px;
+  z-index: 3;
+  color: #54370d;
+}
+
+@keyframes textSlide {
+  0% {
+    left: 58%;
+  }
+
+  100% {
+    left: 1%;
+  }
+}
+
+.landing-text h1 {
+  margin: 0 0 24px;
+  font-family: "Arima";
+  font-size: 60px;
+  line-height: 1.1;
+  color: #54370d;
+  font-size: 40px;
+}
+
+.landing-text p {
+  color: #54370d;
+  font-size: 20px;
+  margin: 0;
+  font-family: "Palanquin";
+  font-size: 28px;
+  line-height: 1.25;
+}
 
 .rotation-logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 500px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
   z-index: 2;
 }
 
 .rotation-container {
   position: relative;
+  left: 28%;
   height: 160px;
   width: 160px;
-  animation: movelogo 2s ease forwards;
+  animation: movelogo 2s ease 4s both;
 }
 
 .rotation {
@@ -973,6 +1014,7 @@ footer {
     font-weight: 400;
     line-height: 1.2;
     display: -webkit-box;
+    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -1147,5 +1189,71 @@ footer {
   #top5-4:checked~.top5-track .top5-card:hover~.top5-card,
   #top5-5:checked~.top5-track .top5-card:hover~.top5-card {
     transform: perspective(1700px) rotateY(-40deg) translateX(130px);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .landing-text {
+    top: 110px;
+    left: 2%;
+    width: 155px;
+    animation: none;
+  }
+
+  .landing-text h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .landing-text p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .landing-text {
+    animation: textMobileOut 1s ease 4s forwards;
+  }
+
+  .rotation-container,
+  .rotation {
+    width: 72px;
+    height: 72px;
+  }
+
+  @keyframes textMobileOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    to {
+      transform: translateX(-120%);
+      opacity: 0;
+    }
+  }
+
+  .no-rotation {
+    position: absolute;
+    width: 24px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1260px) {
+  .landing-text {
+    width: 23%;
+  }
+
+  .landing-text h1 {
+    font-size: 30px;
+  }
+
+  .landing-text p {
+    font-size: 18px;
+    line-height: 1.25;
   }
 }
